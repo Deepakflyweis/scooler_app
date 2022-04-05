@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:scooler_app/essentials/essentials.dart';
+import 'package:scooler_app/modules/select_ride/ride_select.dart';
+import 'package:scooler_app/modules/user_tab/forget_password.dart';
+import 'package:scooler_app/modules/user_tab/login.dart';
+import 'package:scooler_app/modules/user_tab/register.dart';
 import 'package:scooler_app/modules/welcome/splash_screen.dart';
 
 void main() {
@@ -24,7 +28,7 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           primarySwatch: Colors.blue,
         ),
-        home: SplashScreen(),
+        home: ForgetPassword(),
       );
     });
   }
