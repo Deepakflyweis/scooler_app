@@ -101,7 +101,7 @@ class _ForgetPasswordState extends State<ForgetPassword> {
                     color: greyclr,
                     fontWeight: FontWeight.bold,
                   ),
-              ),
+                 ),
                ),
               SizedBox(height: 5.h,),
               Align(
@@ -113,7 +113,7 @@ class _ForgetPasswordState extends State<ForgetPassword> {
                     width: 80,
                     fit: BoxFit.fitHeight,),
                 ),
-              )
+              ),
 
             ],
           ),

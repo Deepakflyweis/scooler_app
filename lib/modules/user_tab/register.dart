@@ -4,6 +4,7 @@ import 'package:scooler_app/essentials/essentials.dart';
 import 'package:scooler_app/modules/user_tab/login.dart';
 
 import '../../utils/app_color/app_color.dart';
+import '../select_ride/ride_select.dart';
 
 
 class Register extends StatefulWidget {
@@ -208,16 +209,18 @@ class _RegisterState extends State<Register> {
                     ),
                   ),
                   SizedBox(height: 3.h,),
+
+                  //Signup button
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [
                       GestureDetector(
                         onTap: (){
-
+                          _signup();
                         },
                         child: Image.asset('assets/images/signup.png',
-                            height: 8.h,
-                            width: 55.w,fit: BoxFit.fill),
+                            height: 7.h,
+                            width: 50.w,fit: BoxFit.fill),
                       ),
                       GestureDetector(
                         onTap: (){
@@ -237,9 +240,9 @@ class _RegisterState extends State<Register> {
                           ],
                         ),
                       )
-
                     ],
                   ),
+                  SizedBox(height: 3.h,),
 
                 ],
               ),
@@ -249,5 +252,15 @@ class _RegisterState extends State<Register> {
         ),
       ),
     );
+  }
+
+  void _signup() {
+    if( userFormKey.currentState!.validate()){
+      if(mobFormKey.currentState!.validate()){
+            Get.offAll(()=> SelectRide());
+
+      }
+
+    }
   }
 }
