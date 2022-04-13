@@ -11,6 +11,12 @@ TextStyle loginTxtStyle = const TextStyle(
   fontWeight: FontWeight.bold,
 );
 
+TextStyle appbarTxtStyle = const TextStyle(
+  fontSize: 18.0,
+  color: blckclr,
+  fontWeight: FontWeight.w400,
+);
+
 TextStyle headingTxtStyle = const TextStyle(
   fontSize: 35.0,
   color: whiteclr,

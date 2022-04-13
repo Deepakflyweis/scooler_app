@@ -3,6 +3,7 @@ import 'package:flutter/services.dart';
 import 'package:scooler_app/essentials/essentials.dart';
 import 'package:scooler_app/modules/home_index/home_index.dart';
 import 'package:scooler_app/modules/select_ride/ride_select.dart';
+import 'package:scooler_app/modules/subscription_parent_child/child_registration.dart';
 import 'package:scooler_app/modules/user_tab/forget_password.dart';
 import 'package:scooler_app/modules/user_tab/login.dart';
 import 'package:scooler_app/modules/user_tab/register.dart';
@@ -30,7 +31,7 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           primarySwatch: Colors.blue,
         ),
-        home: HomeIndex(0),
+        home: ChildRegistration(),
       );
     });
   }

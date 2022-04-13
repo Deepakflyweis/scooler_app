@@ -20,13 +20,16 @@ class _SchoolRideHomePageState extends State<SchoolRideHomePage> {
       child: Scaffold(
         backgroundColor: bckgroundclr,
         appBar: AppBar(
-          leading: GestureDetector(
-            onTap: (){},
-            child: Image.asset('assets/images/menu.png'),
+          leading: Padding(
+            padding:   EdgeInsets.only(right: 10.0),
+            child: GestureDetector(
+              onTap: (){},
+              child: Image.asset('assets/images/menu.png',width: 40,fit: BoxFit.fitWidth),
+            ),
           ),
           actions: [
             Image.asset('assets/images/lang.png',
-                height: 10, width:50 ,fit: BoxFit.fitWidth),
+                height: 10, width:35 ,fit: BoxFit.fitWidth),
           ],
           backgroundColor: whiteclr,
           elevation: 2,
@@ -41,29 +44,32 @@ class _SchoolRideHomePageState extends State<SchoolRideHomePage> {
                   // SizedBox(width: 1.w,),
                   GestureDetector(
                     child: Image.asset('assets/images/trackbus.png',
-                        height: 120, width:80 ,fit: BoxFit.fitHeight),
+                        height: 120, width:70 ,fit: BoxFit.fitHeight),
                     onTap: (){ },
                   ),
                   GestureDetector(
                     child: Image.asset('assets/images/busalarm.png',
-                        height: 120, width:80 ,fit: BoxFit.fitHeight),
+                        height: 120, width:70 ,fit: BoxFit.fitHeight),
                     onTap: (){ },
                   ),
                   GestureDetector(
                     child: Image.asset('assets/images/cctv.png',
-                        height: 120, width:80 ,fit: BoxFit.fitHeight),
+                        height: 120, width:70 ,fit: BoxFit.fitHeight),
                     onTap: (){ },
                   ),
                   GestureDetector(
                     child: Image.asset('assets/images/wallet.png',
-                        height: 120, width:80 ,fit: BoxFit.fitHeight),
+                        height: 120, width:70 ,fit: BoxFit.fitHeight),
                     onTap: (){ },
                   ),
                 ],
               ),
 
-              const Padding(padding: EdgeInsets.all(10),
-              child: Text('Note : If you are planning to holiday',style: TextStyle(color: greyclr)),
+              SizedBox(height: 2.h,),
+                const Padding(padding: EdgeInsets.all(10),
+                child: Align(
+                  alignment: Alignment.centerLeft,
+                    child: Text('Note : If you are planning to holiday',style: TextStyle(color: greyclr))),
               ),
               SizedBox(height: 2.h,),
               Align(
@@ -71,7 +77,7 @@ class _SchoolRideHomePageState extends State<SchoolRideHomePage> {
                 child: Image.asset('assets/images/holyd.png',
                     height: 40, width:130 ,fit: BoxFit.fill),
               ),
-              SizedBox(height: 3.h,),
+              SizedBox(height: 5.h,),
 
               Center(
                  child: Image.asset('assets/images/stst.png',
