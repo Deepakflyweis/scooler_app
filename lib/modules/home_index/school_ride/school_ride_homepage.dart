@@ -1,6 +1,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:scooler_app/essentials/essentials.dart';
+import 'package:scooler_app/modules/home/nav_bar_menu.dart';
 
 import 'package:scooler_app/utils/app_color/app_color.dart';
 
@@ -13,23 +14,27 @@ class SchoolRideHomePage extends StatefulWidget {
 
 class _SchoolRideHomePageState extends State<SchoolRideHomePage> {
 
-
   @override
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
         backgroundColor: bckgroundclr,
+        drawer: NavBar(),
         appBar: AppBar(
           leading: Padding(
-            padding:   EdgeInsets.only(right: 10.0),
+            padding:   EdgeInsets.only(left: 10.0),
             child: GestureDetector(
-              onTap: (){},
+              onTap: (){
+              },
               child: Image.asset('assets/images/menu.png',width: 40,fit: BoxFit.fitWidth),
             ),
           ),
           actions: [
-            Image.asset('assets/images/lang.png',
-                height: 10, width:35 ,fit: BoxFit.fitWidth),
+            Padding(
+              padding: const EdgeInsets.only(right: 10.0),
+              child: Image.asset('assets/images/lang.png',
+                  height: 10, width:35 ,fit: BoxFit.fitWidth),
+            ),
           ],
           backgroundColor: whiteclr,
           elevation: 2,

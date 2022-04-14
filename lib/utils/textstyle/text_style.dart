@@ -16,6 +16,11 @@ TextStyle appbarTxtStyle = const TextStyle(
   color: blckclr,
   fontWeight: FontWeight.w400,
 );
+TextStyle TxtNormal = const TextStyle(
+  fontSize: 17.0,
+  color: blckclr,
+  fontWeight: FontWeight.normal,
+);
 
 TextStyle headingTxtStyle = const TextStyle(
   fontSize: 35.0,
